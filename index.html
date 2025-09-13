@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior Developer Portfolio - takealookat.me</title>
+    <meta name="description" content="Senior Developer specializing in React, Next.js, Web3, and full-stack development. Building sophisticated solutions with clean architecture and thoughtful execution.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Senior Developer Portfolio - takealookat.me">
+    <meta property="og:description" content="Senior Developer specializing in React, Next.js, Web3, and full-stack development.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content=".">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Senior Developer",
+        "jobTitle": "Senior Full-Stack Developer",
+        "url": ".",
+        "sameAs": [
+            "https://github.com/MajestyChibuikem",
+            "https://www.linkedin.com/in/majesty-chibuike-a07a25288/"
+        ],
+        "knowsAbout": [
+            "React", "Next.js", "TypeScript", "Web3", "Solidity", "Node.js", "Python"
+        ]
+    }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="#home" class="logo-link">Majesty Chibuikem</a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#experience" class="nav-link">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            Senior Developer
+                            <span class="hero-subtitle">Building sophisticated solutions with clean architecture</span>
+                        </h1>
+                        <p class="hero-description">
+                            Full-stack developer specializing in React, Next.js, Web3, and enterprise-scale applications. 
+                            I architect systems that solve real problems with thoughtful execution and attention to detail.
+                        </p>
+                        <div class="hero-tech">
+                            <span class="tech-tag" data-tech="react">
+                                React
+                                <div class="tech-logo-overlay">
+                                    <img src="img/techstackImages/react.png" alt="React Logo">
+                                </div>
+                            </span>
+                            <span class="tech-tag" data-tech="nextjs">
+                                Next.js
+                                <div class="tech-logo-overlay">
+                                    <img src="img/techstackImages/next.png" alt="Next.js Logo">
+                                </div>
+                            </span>
+                            <span class="tech-tag" data-tech="typescript">
+                                TypeScript
+                                <div class="tech-logo-overlay">
+                                    <img src="img/techstackImages/typescript.webp" alt="TypeScript Logo">
+                                </div>
+                            </span>
+                            <span class="tech-tag" data-tech="web3">
+                                Web3
+                                <div class="tech-logo-overlay">
+                                    <img src="img/techstackImages/web3.jpeg" alt="Web3 Logo">
+                                </div>
+                            </span>
+                            <span class="tech-tag" data-tech="solidity">
+                                Solidity
+                                <div class="tech-logo-overlay">
+                                    <img src="img/techstackImages/solidity.svg" alt="Solidity Logo">
+                                </div>
+                            </span>
+                            <span class="tech-tag" data-tech="nodejs">
+                                Node.js
+                                <div class="tech-logo-overlay">
+                                    <img src="img/techstackImages/nodejs.png" alt="Node.js Logo">
+                                </div>
+                            </span>
+                            <span class="tech-tag" data-tech="python">
+                                Python
+                                <div class="tech-logo-overlay">
+                                    <img src="img/techstackImages/python.jpeg" alt="Python Logo">
+                                </div>
+                            </span>
+                            <span class="tech-tag" data-tech="microservices">
+                                Microservices
+                                <div class="tech-logo-overlay">
+                                    <img src="img/techstackImages/microservices.jpg" alt="Microservices Logo">
+                                </div>
+                            </span>
+                            <span class="tech-tag" data-tech="java">
+                                Java
+                                <div class="tech-logo-overlay">
+                                    <div style="width: 20px; height: 20px; background: linear-gradient(45deg, #f89820, #ea2d2e); border-radius: 3px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 10px;">J</div>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="logo-container">
+                            <img src="img/logo-black.png" alt="Majesty Chibuikem Logo" class="hero-logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About</h2>
+                    <p class="section-subtitle">Professional expertise and technical leadership</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-paragraph">
+                            With over 5 years of experience in full-stack development, I specialize in building 
+                            scalable applications that solve complex business problems. My expertise spans modern 
+                            frontend frameworks, backend architecture, and emerging technologies like Web3 and blockchain.
+                        </p>
+                        <p class="about-paragraph">
+                            I've led technical teams, architected microservices systems, and delivered solutions 
+                            that have processed millions of transactions. My approach combines deep technical knowledge 
+                            with strategic thinking, ensuring that every solution is both robust and maintainable.
+                        </p>
+                        <p class="about-paragraph">
+                            Currently focused on Web3 development, I've built DeFi protocols, NFT marketplaces, 
+                            and DAO governance systems. I believe in the power of technology to create meaningful 
+                            impact while maintaining the highest standards of code quality and user experience.
+                        </p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="5" data-suffix="+">0</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="50" data-suffix="+">0</div>
+                            <div class="stat-label">Projects Delivered</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="10" data-suffix="+">0</div>
+                            <div class="stat-label">Technologies Mastered</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="3" data-suffix="">0</div>
+                            <div class="stat-label">Teams Led</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Experience</h2>
+                    <p class="section-subtitle">Professional journey and key achievements</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">Senior Full-Stack Developer</h3>
+                                <span class="timeline-company">Web3 Startup</span>
+                                <span class="timeline-period">2022 - Present</span>
+                            </div>
+                            <p class="timeline-description">
+                                Led development of DeFi protocols and NFT marketplace. 
+                                Architected microservices backend to serve 10K+ daily active users.
+                            </p>
+                            <div class="timeline-tech">
+                                <span class="tech-badge">React</span>
+                                <span class="tech-badge">Next.js</span>
+                                <span class="tech-badge">Solidity</span>
+                                <span class="tech-badge">Node.js</span>
+                                <span class="tech-badge">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">Full-Stack Developer</h3>
+                                <span class="timeline-company">Tech Company</span>
+                                <span class="timeline-period">2023 - 2024</span>
+                            </div>
+                            <p class="timeline-description">
+                                Built enterprise applications to serve 50K+ users. Implemented CI/CD pipelines 
+                                reducing deployment time by 70%. Led team of 3 developers.
+                            </p>
+                            <div class="timeline-tech">
+                                <span class="tech-badge">React</span>
+                                <span class="tech-badge">TypeScript</span>
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">Docker</span>
+                                <span class="tech-badge">AWS</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">Frontend Developer</h3>
+                                <span class="timeline-company">Digital Agency</span>
+                                <span class="timeline-period">2025 - Present</span>
+                            </div>
+                            <p class="timeline-description">
+                                Developed responsive web applications for clients across various industries. 
+                                Improved page load times by 60% through performance optimization.
+                            </p>
+                            <div class="timeline-tech">
+                                <span class="tech-badge">React</span>
+                                <span class="tech-badge">JavaScript</span>
+                                <span class="tech-badge">CSS3</span>
+                                <span class="tech-badge">REST APIs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Selected Projects</h2>
+                    <p class="section-subtitle">Quality over quantity - significant projects that demonstrate expertise</p>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card" data-project="token-launchpad">
+                        <div class="project-image">
+                            <img src="img/web3/TokenlaunchPad/Screenshot 2025-09-07 at 12.44.01.png" alt="Token Launch Pad" loading="eager">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Token Launch Pad</h3>
+                            <p class="project-description">
+                                Comprehensive Web3 platform for token launches with integrated DeFi features. 
+                                Built with React, Solidity, and advanced smart contract architecture.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge">React</span>
+                                <span class="tech-badge">Solidity</span>
+                                <span class="tech-badge">Web3</span>
+                                <span class="tech-badge">Ethers.js</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="project-link view-project-btn" data-project="token-launchpad">View Project</button>
+                                <a href="https://github.com/MajestyChibuikem/TokenLaunchpad" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-project="dao-governance">
+                        <div class="project-image">
+                            <img src="img/web3/DaoGovernance/Screenshot 2025-09-07 at 12.39.44.png" alt="DAO Governance System" loading="eager">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">DAO Governance System</h3>
+                            <p class="project-description">
+                                Decentralized governance platform enabling community-driven decision making. 
+                                Features voting mechanisms, proposal management, and transparent execution.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge">Next.js</span>
+                                <span class="tech-badge">Wagmi</span>
+                                <span class="tech-badge">OpenZeppelin</span>
+                                <span class="tech-badge">TypeScript</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="project-link view-project-btn" data-project="dao-governance">View Project</button>
+                                <a href="https://github.com/MajestyChibuikem/DAOGovernanceTool" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-project="nft-marketplace">
+                        <div class="project-image">
+                            <img src="img/web3/nftAfia/Screenshot 2025-09-07 at 12.42.09.png" alt="NFT Marketplace" loading="eager">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">NFT Marketplace</h3>
+                            <p class="project-description">
+                                Full-featured NFT marketplace with minting, trading, and auction capabilities. 
+                                Built with modern Web3 stack and optimized for gas efficiency.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge">React</span>
+                                <span class="tech-badge">RainbowKit</span>
+                                <span class="tech-badge">IPFS</span>
+                                <span class="tech-badge">Hardhat</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="project-link view-project-btn" data-project="nft-marketplace">View Project</button>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-project="gohub">
+                        <div class="project-image">
+                            <img src="img/gohub/Screenshot_1755545838.png" alt="GoHub Mobile App" loading="eager">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">GoHub Mobile App</h3>
+                            <p class="project-description">
+                                Cross-platform mobile application built with React Native. Features real-time 
+                                data synchronization and offline capabilities for enhanced user experience.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge">React Native</span>
+                                <span class="tech-badge">Expo</span>
+                                <span class="tech-badge">TypeScript</span>
+                                <span class="tech-badge">AsyncStorage</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="project-link view-project-btn" data-project="gohub">View Project</button>
+                                <a href="https://github.com/MajestyChibuikem/Gohub" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Expertise Section -->
+        <section id="expertise" class="expertise">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <p class="section-subtitle">Technologies and frameworks I work with</p>
+                </div>
+                <div class="expertise-grid">
+                    <div class="expertise-category">
+                        <h3 class="category-title">Frontend Development</h3>
+                        <div class="tech-list">
+                            <div class="tech-item">
+                                <span class="tech-name">React</span>
+                                <span class="tech-experience">5+ years</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">Next.js</span>
+                                <span class="tech-experience">3+ years</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">TypeScript</span>
+                                <span class="tech-experience">4+ years</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">React Native</span>
+                                <span class="tech-experience">3+ years</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">Tailwind CSS</span>
+                                <span class="tech-experience">3+ years</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="expertise-category">
+                        <h3 class="category-title">Backend Development</h3>
+                        <div class="tech-list">
+                            <div class="tech-item">
+                                <span class="tech-name">Node.js</span>
+                                <span class="tech-experience">4+ years</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">Python</span>
+                                <span class="tech-experience">3+ years</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">Microservices</span>
+                                <span class="tech-experience">3+ years</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">REST APIs</span>
+                                <span class="tech-experience">5+ years</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">PostgreSQL</span>
+                                <span class="tech-experience">3+ years</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="expertise-category">
+                        <h3 class="category-title">Web3 & Blockchain</h3>
+                        <div class="tech-list">
+                            <div class="tech-item">
+                                <span class="tech-name">Solidity</span>
+                                <span class="tech-experience">2+ years</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">Ethers.js</span>
+                                <span class="tech-experience">2+ years</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">Wagmi</span>
+                                <span class="tech-experience">1+ years</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">OpenZeppelin</span>
+                                <span class="tech-experience">2+ years</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">Hardhat</span>
+                                <span class="tech-experience">2+ years</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="expertise-category">
+                        <h3 class="category-title">DevOps & Tools</h3>
+                        <div class="tech-list">
+                            <div class="tech-item">
+                                <span class="tech-name">Docker</span>
+                                <span class="tech-experience">3+ years</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">GitHub Actions</span>
+                                <span class="tech-experience">2+ years</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">AWS</span>
+                                <span class="tech-experience">2+ years</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">CI/CD</span>
+                                <span class="tech-experience">3+ years</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">Testing</span>
+                                <span class="tech-experience">4+ years</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="expertise-category">
+                        <h3 class="category-title">Enterprise Development</h3>
+                        <div class="tech-list">
+                            <div class="tech-item">
+                                <span class="tech-name">.NET/C#</span>
+                                <span class="tech-experience">3+ years</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">ASP.NET</span>
+                                <span class="tech-experience">3+ years</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">Java</span>
+                                <span class="tech-experience">2+ years</span>
+                            </div>
+                            <div class="tech-item">
+                                <span class="tech-name">API Integration</span>
+                                <span class="tech-experience">4+ years</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contact</h2>
+                    <p class="section-subtitle">Let's discuss your next project</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <h3 class="contact-label">Email</h3>
+                            <a href="mailto:majestychibuikem@gmail.com" class="contact-link">majestychibuikem@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <h3 class="contact-label">Phone</h3>
+                            <a href="tel:+2347075960637" class="contact-link">+234 707 596 0637</a>
+                        </div>
+                        <div class="contact-item">
+                            <h3 class="contact-label">Location</h3>
+                            <p class="contact-text">Available for remote work worldwide</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3 class="contact-label">Availability</h3>
+                            <p class="contact-text">Open to new opportunities</p>
+                        </div>
+                    </div>
+                    <div class="contact-links">
+                        <a href="https://github.com/MajestyChibuikem" class="social-link" target="_blank" rel="noopener noreferrer">
+                            <span class="social-text">GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/majesty-chibuike-a07a25288/" class="social-link" target="_blank" rel="noopener noreferrer">
+                            <span class="social-text">LinkedIn</span>
+                        </a>
+                        <a href="https://x.com/majestysudo?s=21" class="social-link" target="_blank" rel="noopener noreferrer">
+                            <span class="social-text">Twitter</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-header">
+                <h3 class="modal-title" id="modalTitle"></h3>
+            </div>
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="" class="modal-image">
+                
+                <!-- Image Slider for Projects -->
+                <div class="project-slider" id="projectSlider" style="display: none;">
+                    <div class="slider-container">
+                        <div class="slider-wrapper">
+                            <div class="slider-track" id="sliderTrack">
+                                <!-- Images will be dynamically inserted here -->
+                            </div>
+                        </div>
+                        
+                        <!-- Navigation Controls -->
+                        <div class="slider-controls">
+                            <button class="slider-btn prev-btn" id="prevBtn" aria-label="Previous image">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="15,18 9,12 15,6"></polyline>
+                                </svg>
+                            </button>
+                            
+                            <div class="slider-indicators" id="sliderIndicators">
+                                <!-- Indicators will be dynamically inserted here -->
+                            </div>
+                            
+                            <button class="slider-btn next-btn" id="nextBtn" aria-label="Next image">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="9,18 15,12 9,6"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                        <div class="slider-counter" id="sliderCounter">
+                            <span id="currentSlide">1</span> / <span id="totalSlides">1</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal-description" id="modalDescription"></div>
+                <div class="modal-tech" id="modalTech"></div>
+            </div>
+            <div class="modal-footer">
+                <a id="modalGitHubLink" href="#" class="modal-github-link" target="_blank" rel="noopener noreferrer">
+                    View on GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">&copy; 2025 MajestyChibuikem.com Built with attention to detail.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
