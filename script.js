@@ -2,32 +2,70 @@
 // Following the principle of "sophisticated simplicity"
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Smooth scrolling for navigation links
+    // Mobile menu functionality
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    const navOverlay = document.querySelector('.nav-overlay');
     const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+
+    function closeMobileMenu() {
+        mobileMenuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+        navOverlay.classList.remove('active');
+        mobileMenuToggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+    }
+
+    function openMobileMenu() {
+        mobileMenuToggle.classList.add('active');
+        navMenu.classList.add('active');
+        navOverlay.classList.add('active');
+        mobileMenuToggle.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+    }
+
+    if (mobileMenuToggle) {
+        mobileMenuToggle.addEventListener('click', function() {
+            const isActive = this.classList.contains('active');
+            if (isActive) {
+                closeMobileMenu();
+            } else {
+                openMobileMenu();
+            }
+        });
+    }
+
+    if (navOverlay) {
+        navOverlay.addEventListener('click', closeMobileMenu);
+    }
+
+    // Smooth scrolling for navigation links
     
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
-            
+
             const targetId = this.getAttribute('href');
             const targetSection = document.querySelector(targetId);
-            
+
             if (targetSection) {
                 const headerHeight = document.querySelector('.header').offsetHeight;
                 const targetPosition = targetSection.offsetTop - headerHeight - 20;
-                
+
                 window.scrollTo({
                     top: targetPosition,
                     behavior: 'smooth'
                 });
+
+                // Close mobile menu after clicking a link
+                closeMobileMenu();
             }
         });
     });
     
     // Header scroll effect
     const header = document.querySelector('.header');
-    let lastScrollY = window.scrollY;
-    
+
     function updateHeader() {
         const currentScrollY = window.scrollY;
         
@@ -38,8 +76,6 @@ document.addEventListener('DOMContentLoaded', function() {
             header.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
             header.style.boxShadow = 'none';
         }
-        
-        lastScrollY = currentScrollY;
     }
     
     // Throttled scroll event
@@ -207,7 +243,7 @@ document.addEventListener('DOMContentLoaded', function() {
             image: 'img/web3/nftAfia/Screenshot 2025-09-07 at 12.42.09.png',
             description: 'Full-featured NFT marketplace with minting, trading, and auction capabilities. Built with modern Web3 stack and optimized for gas efficiency. Includes IPFS integration for decentralized storage and RainbowKit for seamless wallet connections.',
             tech: ['React', 'RainbowKit', 'IPFS', 'Hardhat', 'Solidity', 'Web3', 'TypeScript'],
-            github: '#'
+            github: 'https://github.com/MajestyChibuikem/nft-marketplace'
         },
         'gohub': {
             title: 'GoHub Mobile App',
@@ -227,6 +263,13 @@ document.addEventListener('DOMContentLoaded', function() {
             description: 'Cross-platform mobile application built with React Native. Features real-time data synchronization and offline capabilities for enhanced user experience. Optimized for both iOS and Android platforms with native performance. The app provides a seamless mobile experience with intuitive navigation, responsive design, and both light and dark mode themes.',
             tech: ['React Native', 'Expo', 'TypeScript', 'AsyncStorage', 'JavaScript', 'Mobile Development', 'Cross-platform', 'Real-time Sync', 'Theme Support'],
             github: 'https://github.com/MajestyChibuikem/Gohub'
+        },
+        'luxury-villa': {
+            title: 'Luxury Villa Nigeria',
+            image: 'img/airbnb/luxury-villa-hero.jpg',
+            description: 'Premium hospitality marketing website for a high-end short-stay residence in Lagos, Nigeria. The site features a sophisticated, minimalist design with professional photography, trust signals, and clear call-to-action elements. Includes property showcase, amenities listing, guest reviews, and integrated booking system. Built with responsive design principles to ensure optimal viewing across all devices.',
+            tech: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design', 'UI/UX Design', 'SEO Optimization'],
+            github: 'https://github.com/MajestyChibuikem/airbnb'
         }
     };
     
