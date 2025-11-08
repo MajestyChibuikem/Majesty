@@ -590,6 +590,12 @@ section {
   }
 }
 
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .project-card {
   background-color: var(--color-white);
   border-radius: var(--border-radius);

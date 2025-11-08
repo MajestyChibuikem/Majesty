@@ -209,9 +209,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Check if modal elements exist
     if (!modal || !modalClose || !modalOverlay) {
         console.error('Modal elements not found');
-        return;
     }
-    
+
     // Check if slider elements exist
     if (!projectSlider || !sliderTrack || !sliderIndicators || !prevBtn || !nextBtn) {
         console.error('Slider elements not found');
@@ -231,12 +230,74 @@ document.addEventListener('DOMContentLoaded', function() {
             tech: ['React', 'Solidity', 'Web3', 'Ethers.js', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Hardhat'],
             github: 'https://github.com/MajestyChibuikem/TokenLaunchpad'
         },
-        'dao-governance': {
-            title: 'DAO Governance System',
-            image: 'img/web3/DaoGovernance/Screenshot 2025-09-07 at 12.39.44.png',
-            description: 'Decentralized governance platform enabling community-driven decision making. Features voting mechanisms, proposal management, and transparent execution. Built with modern Web3 stack for secure and efficient governance processes.',
-            tech: ['Next.js', 'Wagmi', 'OpenZeppelin', 'TypeScript', 'React', 'Web3', 'Solidity'],
-            github: 'https://github.com/MajestyChibuikem/DAOGovernanceTool'
+        'buytree': {
+            title: 'BuyTree E-commerce Platform',
+            image: 'img/buytree/HomePage.png',
+            images: [
+                {
+                    src: 'img/buytree/HomePage.png',
+                    alt: 'BuyTree - Home Page',
+                    title: 'Home Page'
+                },
+                {
+                    src: 'img/buytree/user-productSpecs.png',
+                    alt: 'Product Details and Specifications',
+                    title: 'Product Details'
+                },
+                {
+                    src: 'img/buytree/user-checkout.png',
+                    alt: 'Checkout Process',
+                    title: 'Checkout'
+                },
+                {
+                    src: 'img/buytree/user-deliveryDetails.png',
+                    alt: 'Delivery Details Form',
+                    title: 'Delivery Information'
+                },
+                {
+                    src: 'img/buytree/user-paid.png',
+                    alt: 'Payment Confirmation',
+                    title: 'Payment Confirmation'
+                },
+                {
+                    src: 'img/buytree/user-orders.png',
+                    alt: 'Order Tracking',
+                    title: 'Order Tracking'
+                },
+                {
+                    src: 'img/buytree/Seller-dashboard.png',
+                    alt: 'Seller Dashboard Overview',
+                    title: 'Seller Dashboard'
+                },
+                {
+                    src: 'img/buytree/seller-orders.png',
+                    alt: 'Seller Order Management',
+                    title: 'Order Management'
+                },
+                {
+                    src: 'img/buytree/Analytics.png',
+                    alt: 'Analytics Dashboard',
+                    title: 'Analytics Overview'
+                },
+                {
+                    src: 'img/buytree/Analytics-revenue.png',
+                    alt: 'Revenue Analytics',
+                    title: 'Revenue Tracking'
+                },
+                {
+                    src: 'img/buytree/Analytics-topProducts.png',
+                    alt: 'Top Products Analytics',
+                    title: 'Top Products'
+                },
+                {
+                    src: 'img/buytree/analytics-recentOrders.png',
+                    alt: 'Recent Orders Summary',
+                    title: 'Recent Orders'
+                }
+            ],
+            description: 'Complete full-stack e-commerce platform enabling both consumer shopping and seller management capabilities. Features comprehensive product browsing with detailed specifications, secure checkout process with multiple payment options, order tracking system for customers, dedicated seller dashboard for inventory management, comprehensive analytics including revenue tracking, top products analysis, and recent orders monitoring. Built with Node.js backend, MongoDB database, and modern JavaScript frontend. Includes RESTful API architecture, secure authentication, and real-time data updates.',
+            tech: ['Node.js', 'JavaScript', 'MongoDB', 'Express', 'E-commerce', 'REST API', 'Payment Integration', 'Analytics Dashboard'],
+            github: 'https://github.com/MajestyChibuikem/buyTree'
         },
         'nft-marketplace': {
             title: 'NFT Marketplace',
@@ -258,6 +319,26 @@ document.addEventListener('DOMContentLoaded', function() {
                     src: 'img/gohub/Screenshot_1756793501.png',
                     alt: 'GoHub Dark Mode - Home Screen',
                     title: 'Dark Mode'
+                },
+                {
+                    src: 'img/gohub/IMG_6659.png',
+                    alt: 'GoHub App Screenshot',
+                    title: 'App View 1'
+                },
+                {
+                    src: 'img/gohub/IMG_6660.png',
+                    alt: 'GoHub App Screenshot',
+                    title: 'App View 2'
+                },
+                {
+                    src: 'img/gohub/IMG_6661.png',
+                    alt: 'GoHub App Screenshot',
+                    title: 'App View 3'
+                },
+                {
+                    src: 'img/gohub/IMG_6662.png',
+                    alt: 'GoHub App Screenshot',
+                    title: 'App View 4'
                 }
             ],
             description: 'Cross-platform mobile application built with React Native. Features real-time data synchronization and offline capabilities for enhanced user experience. Optimized for both iOS and Android platforms with native performance. The app provides a seamless mobile experience with intuitive navigation, responsive design, and both light and dark mode themes.',
@@ -266,10 +347,41 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         'luxury-villa': {
             title: 'Luxury Villa Nigeria',
-            image: 'img/airbnb/luxury-villa-hero.jpg',
+            image: 'https://images.unsplash.com/photo-1582063289852-62e3ba2747f8?w=1200&q=90',
             description: 'Premium hospitality marketing website for a high-end short-stay residence in Lagos, Nigeria. The site features a sophisticated, minimalist design with professional photography, trust signals, and clear call-to-action elements. Includes property showcase, amenities listing, guest reviews, and integrated booking system. Built with responsive design principles to ensure optimal viewing across all devices.',
             tech: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design', 'UI/UX Design', 'SEO Optimization'],
             github: 'https://github.com/MajestyChibuikem/airbnb'
+        },
+        'ats': {
+            title: 'Smart Student Analytics System (SSAS)',
+            image: 'img/ats/Dashboard.png',
+            images: [
+                {
+                    src: 'img/ats/Dashboard.png',
+                    alt: 'Dashboard Overview - Real-time Analytics',
+                    title: 'Dashboard Overview'
+                },
+                {
+                    src: 'img/ats/Students.png',
+                    alt: 'Students Management Interface',
+                    title: 'Student Management'
+                },
+                {
+                    src: 'img/ats/Teachers.png',
+                    alt: 'Teachers Dashboard',
+                    title: 'Teacher Dashboard'
+                }
+            ],
+            description: 'Production-ready AI-powered educational analytics platform processing 20,000+ student records. Built with Django 5.1 and scikit-learn, featuring 4 ML models: Career Recommendation Engine (66.5ms), Peer Analysis System (91.8ms with 128x optimization), Anomaly Detection (17.0ms), and Performance Prediction (39.1ms). Includes 12 RESTful API endpoints with Knox authentication, custom rate limiting, multi-layer caching (75%+ hit rate), and supports 100+ concurrent users. Privacy-preserving analytics with GDPR compliance, differential privacy (ε=1.0), k-anonymity (k=10), and comprehensive audit trails. 100% test success rate with detailed API documentation and scaling guides for schools of all sizes.',
+            tech: ['Django 5.1', 'Python', 'PostgreSQL', 'scikit-learn', 'Redis', 'Django REST Framework', 'Machine Learning', 'Celery', 'Privacy Engineering', 'RESTful API'],
+            github: 'https://github.com/MajestyChibuikem/ATS'
+        },
+        'dio': {
+            title: 'Dio - Developer Collaboration Platform',
+            image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=90',
+            description: 'AI-powered microservices platform designed to streamline developer collaboration and code understanding. Built with Next.js frontend and Python AI backend, containerized with Docker. Integrates Weaviate vector database for context-aware codebase search. Features automatic code documentation generation, intelligent search capabilities across entire codebases, AI-powered commit summaries from repository changes, real-time meeting transcription with key topic extraction, and contextual search through past discussions. The microservice architecture enables efficient development through containerized deployment, providing teams with unified documentation and codebase insights. Licensed under MIT with active development and comprehensive setup scripts for local, Docker, and Weaviate configurations.',
+            tech: ['Next.js', 'TypeScript', 'Python', 'Weaviate', 'Docker', 'Microservices', 'Vector Database', 'AI/ML', 'GitHub Integration'],
+            github: 'https://github.com/MajestyChibuikem/dio'
         }
     };
     
@@ -281,69 +393,39 @@ document.addEventListener('DOMContentLoaded', function() {
         // Clear existing content
         sliderTrack.innerHTML = '';
         sliderIndicators.innerHTML = '';
-        
+
         totalSlides = images.length;
         currentSlideIndex = 0;
-        
-        // Preload images to prevent flickering
-        const imagePromises = images.map(imageData => {
-            return new Promise((resolve, reject) => {
-                const img = new Image();
-                img.onload = () => resolve(img);
-                img.onerror = () => reject(new Error(`Failed to load image: ${imageData.src}`));
-                img.src = imageData.src;
-            });
-        });
-        
-        // Wait for all images to load before creating slider
-        Promise.all(imagePromises)
-            .then(() => {
-                // Create slides after images are loaded
-                images.forEach((imageData, index) => {
-                    const slide = document.createElement('div');
-                    slide.className = 'slider-slide';
-                    
-                    const img = document.createElement('img');
-                    img.src = imageData.src;
-                    img.alt = imageData.alt;
-                    img.loading = 'eager'; // Change to eager for better loading
-                    
-                    slide.appendChild(img);
-                    sliderTrack.appendChild(slide);
-                    
-                    // Create indicator
-                    const indicator = document.createElement('div');
-                    indicator.className = 'slider-indicator';
-                    if (index === 0) indicator.classList.add('active');
-                    indicator.addEventListener('click', () => goToSlide(index));
-                    sliderIndicators.appendChild(indicator);
-                });
-                
-                // Update counter
-                totalSlidesSpan.textContent = totalSlides;
-                updateSlider();
-            })
-            .catch(error => {
-                console.error('Error loading slider images:', error);
-                // Fallback: create slider even if some images fail to load
-                createSliderFallback(images);
-            });
-    }
-    
-    function createSliderFallback(images) {
-        // Fallback method that doesn't wait for image loading
+
+        console.log('Creating slider with images:', images.map(img => img.src));
+
+        // Create slides immediately without waiting for preload
+        // This allows images to load progressively
         images.forEach((imageData, index) => {
             const slide = document.createElement('div');
             slide.className = 'slider-slide';
-            
+
             const img = document.createElement('img');
             img.src = imageData.src;
             img.alt = imageData.alt;
             img.loading = 'eager';
-            
+
+            // Add loading indicator
+            img.style.backgroundColor = '#f0f0f0';
+            img.style.minHeight = '300px';
+
+            // Log when images load or fail
+            img.onload = () => {
+                console.log(`Image ${index + 1} loaded:`, imageData.src);
+            };
+            img.onerror = () => {
+                console.error(`Image ${index + 1} failed to load:`, imageData.src);
+                img.alt = `Failed to load: ${imageData.title}`;
+            };
+
             slide.appendChild(img);
             sliderTrack.appendChild(slide);
-            
+
             // Create indicator
             const indicator = document.createElement('div');
             indicator.className = 'slider-indicator';
@@ -351,10 +433,11 @@ document.addEventListener('DOMContentLoaded', function() {
             indicator.addEventListener('click', () => goToSlide(index));
             sliderIndicators.appendChild(indicator);
         });
-        
+
         // Update counter
         totalSlidesSpan.textContent = totalSlides;
         updateSlider();
+        console.log('Slider created successfully');
     }
     
     function updateSlider() {
@@ -404,13 +487,18 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('Project not found:', projectId);
             return;
         }
-        
+
+        console.log('Project data:', project);
+        console.log('Has images array:', !!project.images);
+        console.log('Images array length:', project.images ? project.images.length : 0);
+
         modalTitle.textContent = project.title;
         modalDescription.textContent = project.description;
         modalGitHubLink.href = project.github;
-        
+
         // Check if project has multiple images
         if (project.images && project.images.length > 1) {
+            console.log('Showing slider with', project.images.length, 'images');
             // Show slider for projects with multiple images
             modalImage.style.display = 'none';
             projectSlider.style.display = 'block';
@@ -498,15 +586,25 @@ document.addEventListener('DOMContentLoaded', function() {
             closeModal();
         }
         
-        // Slider navigation
-        if (e.target === nextBtn || e.target.closest('.next-btn')) {
+        // Slider navigation - check if click is on or within the buttons
+        // Check if the clicked element or any parent is the next/prev button
+        const nextButton = e.target.closest('.next-btn');
+        const prevButton = e.target.closest('.prev-btn');
+
+        if (nextButton) {
             e.preventDefault();
+            e.stopPropagation();
+            console.log('Next button clicked');
             nextSlide();
+            return;
         }
-        
-        if (e.target === prevBtn || e.target.closest('.prev-btn')) {
+
+        if (prevButton) {
             e.preventDefault();
+            e.stopPropagation();
+            console.log('Previous button clicked');
             prevSlide();
+            return;
         }
     });
     
@@ -521,6 +619,25 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
         closeModal();
     });
+
+    // Direct event listeners for slider buttons
+    if (prevBtn) {
+        prevBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            console.log('Prev button clicked directly');
+            prevSlide();
+        });
+    }
+
+    if (nextBtn) {
+        nextBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            console.log('Next button clicked directly');
+            nextSlide();
+        });
+    }
     
     // Close modal with Escape key and keyboard navigation
     document.addEventListener('keydown', function(e) {
