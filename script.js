@@ -1,6 +1,22 @@
 // Portfolio JavaScript - Minimal and Purposeful
 // Following the principle of "sophisticated simplicity"
 
+// Loading screen handler
+window.addEventListener('load', function() {
+    const loadingScreen = document.getElementById('loadingScreen');
+
+    // Wait for the animation to complete (2s) plus a small buffer
+    setTimeout(() => {
+        loadingScreen.classList.add('fade-out');
+        document.body.classList.remove('loading');
+
+        // Remove from DOM after fade out completes
+        setTimeout(() => {
+            loadingScreen.style.display = 'none';
+        }, 500);
+    }, 2200); // 2s animation + 200ms buffer
+});
+
 document.addEventListener('DOMContentLoaded', function() {
     // Mobile menu functionality
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
@@ -675,6 +691,47 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize counter animation for stats
     initializeCounterAnimation();
+
+    // Contact form handler
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const submitButton = contactForm.querySelector('.form-submit');
+            const originalButtonText = submitButton.innerHTML;
+
+            // Get form data
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value
+            };
+
+            // Show loading state
+            submitButton.disabled = true;
+            submitButton.innerHTML = '<span>Sending...</span>';
+
+            // Create mailto link with form data
+            const mailtoLink = `mailto:majestychibuikem@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
+                `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+            )}`;
+
+            // Open mailto link
+            window.location.href = mailtoLink;
+
+            // Reset form after a short delay
+            setTimeout(() => {
+                contactForm.reset();
+                submitButton.disabled = false;
+                submitButton.innerHTML = originalButtonText;
+
+                // Show success message
+                alert('Email client opened! If it didn\'t open automatically, please email me directly at majestychibuikem@gmail.com');
+            }, 1000);
+        });
+    }
 });
 
 // Utility function for smooth scrolling (used by navigation)
