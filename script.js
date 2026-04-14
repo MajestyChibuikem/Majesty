@@ -251,64 +251,24 @@ document.addEventListener('DOMContentLoaded', function() {
             image: 'img/buytree/HomePage.png',
             images: [
                 {
-                    src: 'img/buytree/HomePage.png',
+                    src: 'img/buytree/homepage.png',
                     alt: 'BuyTree - Home Page',
                     title: 'Home Page'
                 },
                 {
-                    src: 'img/buytree/user-productSpecs.png',
-                    alt: 'Product Details and Specifications',
-                    title: 'Product Details'
+                    src: 'img/buytree/page1.png',
+                    alt: '',
+                    title: ''
                 },
                 {
-                    src: 'img/buytree/user-checkout.png',
-                    alt: 'Checkout Process',
-                    title: 'Checkout'
+                    src: 'img/buytree/page2.png',
+                    alt: '',
+                    title: ''
                 },
                 {
-                    src: 'img/buytree/user-deliveryDetails.png',
-                    alt: 'Delivery Details Form',
-                    title: 'Delivery Information'
-                },
-                {
-                    src: 'img/buytree/user-paid.png',
-                    alt: 'Payment Confirmation',
-                    title: 'Payment Confirmation'
-                },
-                {
-                    src: 'img/buytree/user-orders.png',
-                    alt: 'Order Tracking',
-                    title: 'Order Tracking'
-                },
-                {
-                    src: 'img/buytree/Seller-dashboard.png',
-                    alt: 'Seller Dashboard Overview',
-                    title: 'Seller Dashboard'
-                },
-                {
-                    src: 'img/buytree/seller-orders.png',
-                    alt: 'Seller Order Management',
-                    title: 'Order Management'
-                },
-                {
-                    src: 'img/buytree/Analytics.png',
-                    alt: 'Analytics Dashboard',
-                    title: 'Analytics Overview'
-                },
-                {
-                    src: 'img/buytree/Analytics-revenue.png',
-                    alt: 'Revenue Analytics',
-                    title: 'Revenue Tracking'
-                },
-                {
-                    src: 'img/buytree/Analytics-topProducts.png',
-                    alt: 'Top Products Analytics',
-                    title: 'Top Products'
-                },
-                {
-                    src: 'img/buytree/analytics-recentOrders.png',
-                    alt: 'Recent Orders Summary',
-                    title: 'Recent Orders'
+                    src: 'img/buytree/page3.png',
+                    alt: '',
+                    title: ''
                 }
             ],
             description: 'Complete full-stack e-commerce platform enabling both consumer shopping and seller management capabilities. Features comprehensive product browsing with detailed specifications, secure checkout process with multiple payment options, order tracking system for customers, dedicated seller dashboard for inventory management, comprehensive analytics including revenue tracking, top products analysis, and recent orders monitoring. Built with Node.js backend, MongoDB database, and modern JavaScript frontend. Includes RESTful API architecture, secure authentication, and real-time data updates.',
