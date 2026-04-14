@@ -242,34 +242,25 @@ document.addEventListener('DOMContentLoaded', function() {
         'token-launchpad': {
             title: 'Token Launch Pad',
             image: 'img/web3/TokenlaunchPad/Screenshot 2025-09-07 at 12.44.01.png',
+            images: [
+                { src: 'img/web3/TokenlaunchPad/Screenshot 2025-09-07 at 12.44.01.png', alt: 'Token Launchpad Main', title: 'Main' },
+                { src: 'img/web3/TokenlaunchPad/Screenshot 2025-09-07 at 12.45.50.png', alt: '', title: '' },
+                { src: 'img/web3/TokenlaunchPad/Screenshot 2025-09-07 at 12.46.02.png', alt: '', title: '' },
+                { src: 'img/web3/TokenlaunchPad/Screenshot 2025-09-07 at 12.46.10.png', alt: '', title: '' },
+                { src: 'img/web3/TokenlaunchPad/Screenshot 2025-09-07 at 12.46.19.png', alt: '', title: '' }
+            ],
             description: 'Comprehensive Web3 platform for token launches with integrated DeFi features. Built with React, Solidity, and advanced smart contract architecture. Features include no-code token creation, tokenomics calculator, vesting schedules, and multi-chain deployment support.',
             tech: ['React', 'Solidity', 'Web3', 'Ethers.js', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Hardhat'],
             github: 'https://github.com/MajestyChibuikem/TokenLaunchpad'
         },
         'buytree': {
             title: 'BuyTree E-commerce Platform',
-            image: 'img/buytree/HomePage.png',
+            image: 'img/buytree/homepage.png',
             images: [
-                {
-                    src: 'img/buytree/homepage.png',
-                    alt: 'BuyTree - Home Page',
-                    title: 'Home Page'
-                },
-                {
-                    src: 'img/buytree/page1.png',
-                    alt: '',
-                    title: ''
-                },
-                {
-                    src: 'img/buytree/page2.png',
-                    alt: '',
-                    title: ''
-                },
-                {
-                    src: 'img/buytree/page3.png',
-                    alt: '',
-                    title: ''
-                }
+                { src: 'img/buytree/homepage.png', alt: 'BuyTree - Home Page', title: 'Home Page' },
+                { src: 'img/buytree/page1.png', alt: '', title: '' },
+                { src: 'img/buytree/page2.png', alt: '', title: '' },
+                { src: 'img/buytree/page3.png', alt: '', title: '' }
             ],
             description: 'Complete full-stack e-commerce platform enabling both consumer shopping and seller management capabilities. Features comprehensive product browsing with detailed specifications, secure checkout process with multiple payment options, order tracking system for customers, dedicated seller dashboard for inventory management, comprehensive analytics including revenue tracking, top products analysis, and recent orders monitoring. Built with Node.js backend, MongoDB database, and modern JavaScript frontend. Includes RESTful API architecture, secure authentication, and real-time data updates.',
             tech: ['Node.js', 'JavaScript', 'MongoDB', 'Express', 'E-commerce', 'REST API', 'Payment Integration', 'Analytics Dashboard'],
@@ -278,6 +269,9 @@ document.addEventListener('DOMContentLoaded', function() {
         'nft-marketplace': {
             title: 'NFT Marketplace',
             image: 'img/web3/nftAfia/Screenshot 2025-09-07 at 12.42.09.png',
+            images: [
+                { src: 'img/web3/nftAfia/Screenshot 2025-09-07 at 12.42.09.png', alt: 'NFT Marketplace', title: 'NFT Marketplace' }
+            ],
             description: 'Full-featured NFT marketplace with minting, trading, and auction capabilities. Built with modern Web3 stack and optimized for gas efficiency. Includes IPFS integration for decentralized storage and RainbowKit for seamless wallet connections.',
             tech: ['React', 'RainbowKit', 'IPFS', 'Hardhat', 'Solidity', 'Web3', 'TypeScript'],
             github: 'https://github.com/MajestyChibuikem/nft-marketplace'
@@ -286,36 +280,12 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'GoHub Mobile App',
             image: 'img/gohub/Screenshot_1755545838.png',
             images: [
-                {
-                    src: 'img/gohub/Screenshot_1755545838.png',
-                    alt: 'GoHub Light Mode - Home Screen',
-                    title: 'Light Mode'
-                },
-                {
-                    src: 'img/gohub/Screenshot_1756793501.png',
-                    alt: 'GoHub Dark Mode - Home Screen',
-                    title: 'Dark Mode'
-                },
-                {
-                    src: 'img/gohub/IMG_6659.png',
-                    alt: 'GoHub App Screenshot',
-                    title: 'App View 1'
-                },
-                {
-                    src: 'img/gohub/IMG_6660.png',
-                    alt: 'GoHub App Screenshot',
-                    title: 'App View 2'
-                },
-                {
-                    src: 'img/gohub/IMG_6661.png',
-                    alt: 'GoHub App Screenshot',
-                    title: 'App View 3'
-                },
-                {
-                    src: 'img/gohub/IMG_6662.png',
-                    alt: 'GoHub App Screenshot',
-                    title: 'App View 4'
-                }
+                { src: 'img/gohub/Screenshot_1755545838.png', alt: 'GoHub Light Mode - Home Screen', title: 'Light Mode' },
+                { src: 'img/gohub/Screenshot_1756793501.png', alt: 'GoHub Dark Mode - Home Screen', title: 'Dark Mode' },
+                { src: 'img/gohub/IMG_6659.png', alt: 'GoHub App Screenshot', title: 'App View 1' },
+                { src: 'img/gohub/IMG_6660.png', alt: 'GoHub App Screenshot', title: 'App View 2' },
+                { src: 'img/gohub/IMG_6661.png', alt: 'GoHub App Screenshot', title: 'App View 3' },
+                { src: 'img/gohub/IMG_6662.png', alt: 'GoHub App Screenshot', title: 'App View 4' }
             ],
             description: 'Cross-platform mobile application built with React Native. Features real-time data synchronization and offline capabilities for enhanced user experience. Optimized for both iOS and Android platforms with native performance. The app provides a seamless mobile experience with intuitive navigation, responsive design, and both light and dark mode themes.',
             tech: ['React Native', 'Expo', 'TypeScript', 'AsyncStorage', 'JavaScript', 'Mobile Development', 'Cross-platform', 'Real-time Sync', 'Theme Support'],
@@ -323,7 +293,14 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         'luxury-villa': {
             title: 'Luxury Villa Nigeria',
-            image: 'https://images.unsplash.com/photo-1582063289852-62e3ba2747f8?w=1200&q=90',
+            image: 'img/normal-human/landing.png',
+            images: [
+                { src: 'img/normal-human/landing.png', alt: 'Landing', title: 'Landing' },
+                { src: 'img/normal-human/landing2.png', alt: 'Landing 2', title: 'Landing 2' },
+                { src: 'img/normal-human/askAI.png', alt: 'Ask AI', title: 'Ask AI' },
+                { src: 'img/normal-human/compose.png', alt: 'Compose', title: 'Compose' },
+                { src: 'img/normal-human/inbox.png', alt: 'Inbox', title: 'Inbox' }
+            ],
             description: 'Premium hospitality marketing website for a high-end short-stay residence in Lagos, Nigeria. The site features a sophisticated, minimalist design with professional photography, trust signals, and clear call-to-action elements. Includes property showcase, amenities listing, guest reviews, and integrated booking system. Built with responsive design principles to ensure optimal viewing across all devices.',
             tech: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design', 'UI/UX Design', 'SEO Optimization'],
             github: 'https://github.com/MajestyChibuikem/airbnb'
@@ -332,21 +309,9 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'Smart Student Analytics System (SSAS)',
             image: 'img/ats/Dashboard.png',
             images: [
-                {
-                    src: 'img/ats/Dashboard.png',
-                    alt: 'Dashboard Overview - Real-time Analytics',
-                    title: 'Dashboard Overview'
-                },
-                {
-                    src: 'img/ats/Students.png',
-                    alt: 'Students Management Interface',
-                    title: 'Student Management'
-                },
-                {
-                    src: 'img/ats/Teachers.png',
-                    alt: 'Teachers Dashboard',
-                    title: 'Teacher Dashboard'
-                }
+                { src: 'img/ats/Dashboard.png', alt: 'Dashboard Overview - Real-time Analytics', title: 'Dashboard Overview' },
+                { src: 'img/ats/Students.png', alt: 'Students Management Interface', title: 'Student Management' },
+                { src: 'img/ats/Teachers.png', alt: 'Teachers Dashboard', title: 'Teacher Dashboard' }
             ],
             description: 'Production-ready AI-powered educational analytics platform processing 20,000+ student records. Built with Django 5.1 and scikit-learn, featuring 4 ML models: Career Recommendation Engine (66.5ms), Peer Analysis System (91.8ms with 128x optimization), Anomaly Detection (17.0ms), and Performance Prediction (39.1ms). Includes 12 RESTful API endpoints with Knox authentication, custom rate limiting, multi-layer caching (75%+ hit rate), and supports 100+ concurrent users. Privacy-preserving analytics with GDPR compliance, differential privacy (ε=1.0), k-anonymity (k=10), and comprehensive audit trails. 100% test success rate with detailed API documentation and scaling guides for schools of all sizes.',
             tech: ['Django 5.1', 'Python', 'PostgreSQL', 'scikit-learn', 'Redis', 'Django REST Framework', 'Machine Learning', 'Celery', 'Privacy Engineering', 'RESTful API'],
@@ -354,10 +319,28 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         'dio': {
             title: 'Dio - Developer Collaboration Platform',
-            image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=90',
+            image: 'img/dio/dashboard.png',
+            images: [
+                { src: 'img/dio/dashboard.png', alt: 'Dashboard', title: 'Dashboard' },
+                { src: 'img/dio/documentation.png', alt: 'Documentation', title: 'Documentation' },
+                { src: 'img/dio/meetingDetail.png', alt: 'Meeting Detail', title: 'Meeting Detail' },
+                { src: 'img/dio/meetings.png', alt: 'Meetings', title: 'Meetings' },
+                { src: 'img/dio/visualize.png', alt: 'Visualize', title: 'Visualize' },
+                { src: 'img/dio/QandA.png', alt: 'Q and A', title: 'Q and A' }
+            ],
             description: 'AI-powered microservices platform designed to streamline developer collaboration and code understanding. Built with Next.js frontend and Python AI backend, containerized with Docker. Integrates Weaviate vector database for context-aware codebase search. Features automatic code documentation generation, intelligent search capabilities across entire codebases, AI-powered commit summaries from repository changes, real-time meeting transcription with key topic extraction, and contextual search through past discussions. The microservice architecture enables efficient development through containerized deployment, providing teams with unified documentation and codebase insights. Licensed under MIT with active development and comprehensive setup scripts for local, Docker, and Weaviate configurations.',
             tech: ['Next.js', 'TypeScript', 'Python', 'Weaviate', 'Docker', 'Microservices', 'Vector Database', 'AI/ML', 'GitHub Integration'],
             github: 'https://github.com/MajestyChibuikem/dio'
+        },
+        'GoBoard-Technical-Showcase': {
+            title: 'GoBoard Technical Showcase',
+            image: 'img/goboard/discover.png',
+            images: [
+                { src: 'img/goboard/discover.png', alt: 'Discover Projects', title: 'Discover Projects' }
+            ],
+            description: 'A competitive project showcase platform for the Faculty of Computing & IT at Godfrey Okoye University. Designed to drive innovation, reward builders, and create a visible culture of student engineering excellence.',
+            tech: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design'],
+            github: 'https://github.com/MajestyChibuikem/goboard'
         }
     };
     
